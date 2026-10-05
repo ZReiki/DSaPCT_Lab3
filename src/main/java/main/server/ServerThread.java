@@ -69,7 +69,7 @@ public class ServerThread extends Thread{
 
     // Метод відправлення "Вітальної інформації" клієнту
     private void sendWelcome(PrintWriter out) {
-        String currentTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        String currentTime = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date());
         out.println(welcomeInfo + "\n[ЧАС СЕРВЕРА] " + currentTime + "\nEND_OF_WELCOME");
     }
 
